@@ -1,0 +1,27 @@
+1. instalações:
+sudo apt install python3
+sudo apt install puthon3-pip
+pip install pandas matplotlib seaborn scikit-learn
+pip3 install tabulate
+
+curl -sS https://bootstrap.pypa.io/get-pip.py | sudo python3
+pip3 install pandas
+
+2. Dataset utilizado:
+Wine Quality Dataset 
+https://archive.ics.uci.edu/dataset/186/wine+quality
+
+3. Utilização do dataset wine quality
+pip install ucimlrepo
+
+4. import do dataset:
+from ucimlrepo import fetch_ucirepo 
+  
+# fetch dataset 
+wine_quality = fetch_ucirepo(id=186) 
+  
+# data (as pandas dataframes) 
+X = wine_quality.data.features 
+y = wine_quality.data.targets 
+  
+# metadata 
