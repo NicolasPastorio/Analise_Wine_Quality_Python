@@ -2,10 +2,20 @@
 sudo apt install python3
 sudo apt install puthon3-pip
 pip install pandas matplotlib seaborn scikit-learn
-pip3 install tabulate
+
 
 curl -sS https://bootstrap.pypa.io/get-pip.py | sudo python3
+pip3 install tabulate
 pip3 install pandas
+pip3 install matplotlib seaborn
+
+Rainbow CSV (extenção do VSCode)
+
+Descubra onde está o arquivo matplotlibrc com o seguinte código python:
+'import matplotlib
+print(matplotlib.matplotlib_fname())'
+/home/nicolas/.local/lib/python3.10/site-packages/matplotlib/mpl-data/matplotlibrc
+Altere a linha para: ##backend: TkAgg
 
 2. Dataset utilizado:
 Wine Quality Dataset 
@@ -25,3 +35,6 @@ X = wine_quality.data.features
 y = wine_quality.data.targets 
   
 # metadata 
+
+# Citação
+Cortez, P., Cerdeira, A., Almeida, F., Matos, T., & Reis, J. (2009). Wine Quality [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C56S3T.
